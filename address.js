@@ -119,21 +119,5 @@
     n.Address = new u;
 })(window);
 $(function() {
-
-    function t(n, t) {
-        return n && t ? !0 : n == t
-    }
-
-    function i(n) {
-        return n.differenceAddress ? f(n) : e(n)
-    }
-
-    function f(n) {
-        return n.shipping.province && !n.requireDistrict && !n.requireWard || n.shipping.province && n.shipping.district && !n.requireWard || n.shipping.province && n.shipping.district && n.shipping.ward
-    }
-
-    function e(n) {
-        return n.billing.province && !n.requireDistrict && !n.requireWard || n.billing.province && n.billing.district && !n.requireWard || n.billing.province && n.billing.district && n.billing.ward
-    }
     Address.bind().refresh();
 });
