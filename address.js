@@ -1,6 +1,3 @@
-function setContactFormTabIndex(n) {
-    n ? ($("#billingDistrict").is(":disabled") || setTabIndex($("#select2-billingDistrict-container").parent(), -1), $("#billingWard").is(":disabled") || setTabIndex($("#select2-billingWard-container").parent(), -1), setTabIndex($("#shipping-address input"), 0), $("#shippingProvince").is(":disabled") || setTabIndex($("#select2-shippingProvince-container").parent(), 0), $("#shippingDistrict").is(":disabled") || setTabIndex($("#select2-shippingDistrict-container").parent(), 0), $("#shippingWard").is(":disabled") || setTabIndex($("#select2-shippingWard-container").parent(), 0)) : ($("#billingDistrict").is(":disabled") || setTabIndex($("#select2-billingDistrict-container").parent(), 0), $("#billingWard").is(":disabled") || setTabIndex($("#select2-billingWard-container").parent(), 0), setTabIndex($("#shipping-address input"), -1), $("#shippingProvince").is(":disabled") || setTabIndex($("#select2-shippingProvince-container").parent(), -1), $("#shippingDistrict").is(":disabled") || setTabIndex($("#select2-shippingDistrict-container").parent(), -1), $("#shippingWard").is(":disabled") || setTabIndex($("#select2-shippingWard-container").parent(), -1))
-}
 (function(n) {
     function h(n, t) {
         var u, f, r;
